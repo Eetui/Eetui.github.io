@@ -7,12 +7,12 @@ I did this project for Advanced Game Programming -course.
 [Link to Object Interactions GitHub](https://github.com/Eetui/ObjectInteractions)
 
 
-## Goals fo the course
+## Goals of the course
 My goal was to write modular and cleaner code.
 
 ## What did I learn?
 
-I fulfilled my goal and managed to write modular and better code
+I fulfilled my goal and managed to write modular and cleaner code.
 
 I learned SOLID-principles on some level and how to implement them into my code.
 
