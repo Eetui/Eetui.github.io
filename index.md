@@ -1,4 +1,5 @@
 # Hello
+![Eetu](https://github.com/Eetui/Eetui.github.io/blob/main/Images/Eetu.jpeg)
 
 My name is Eetu Ihalainen and I am a 23-year-old game programmer student from Tampere. My strengths are with Unity and C# programming. I also know the basics of Unreal Engine 4 and C++.
 
