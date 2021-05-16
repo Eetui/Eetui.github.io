@@ -2,6 +2,8 @@
 
 # Object Interactions
 
+Is a project where the player is controlled from a first-person perspective and player can interact with different objects.
+
 I did this project for Advanced Game Programming -course.
 
 [Link to Object Interactions GitHub](https://github.com/Eetui/ObjectInteractions)
