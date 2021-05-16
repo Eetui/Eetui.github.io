@@ -8,7 +8,7 @@ My name is Eetu Ihalainen and I am a 23-year-old game programmer student from Ta
 [GitHub](https://github.com/Eetui)
 
 
-### Projects:
+## Projects:
 
 Links below leads you to their corresponding pages.
 
