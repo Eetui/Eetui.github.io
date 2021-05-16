@@ -72,8 +72,8 @@ All interactable objects inherit IInteractable interface. IInteractable methdos 
 ```cs
 public interface IInteractable
 {
-        string GetInteractionText();
-        void Interact();
+    string GetInteractionText();
+    void Interact();
 }
 ```
 
