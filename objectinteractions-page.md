@@ -171,9 +171,13 @@ public class UIInteract : MonoBehaviour
 }
 ```
 
-### ScriptableObject Event system
+### ScriptableObject Event System
 
-This system has two parts GameEvent.cs and GameEventListener.cs. GameEvent will be a ScriptableObject.
+This system has two parts GameEvent.cs, which is a ScriptableObject and GameEventListener.cs, which will be attached to a gameobject. To create a new game event we have to go to the Assets/Create submenu and click "New Game Event". To add it there we have to use ```[CreateAssetMenu(menuName = "Eetu/Game Event", fileName = "New Game Event")]``` attribute.
+
+In GameEvent.cs we have a list ```private List<GameEventListener> listeners``` that will contain every GameEventListener. To add GameEventListener to the list we call the GameEvent class' ```public void AddListener(GameEventListener gameEventListener)``` method in GameEventListener's Awake method like this ```private void Awake() => gameEvent.AddListener(this);```.
+
+Game event can have multiple listeners and to invoke all listeners use the ```public void Invoke()``` method to do so. ```public void Invoke()``` method will go through the list of GameListeners with a foreach loop and call ```TriggerEvent()``` method in each listener. ```TriggerEvent()``` method will trigger a UnityEvent and everything assigned to it in the editor. Examples below the code.
 
 #### GameEvent.cs
 
@@ -181,7 +185,7 @@ This system has two parts GameEvent.cs and GameEventListener.cs. GameEvent will 
 [CreateAssetMenu(menuName = "Eetu/Game Event", fileName = "New Game Event")]
 public class GameEvent : ScriptableObject
 {
-    List<GameEventListener> listeners = new List<GameEventListener>();
+    private List<GameEventListener> listeners = new List<GameEventListener>();
 
     public void Invoke()
     {
@@ -213,3 +217,25 @@ public class GameEventListener : MonoBehaviour
     public void TriggerEvent() => unityEvent?.Invoke();
 }
 ```
+
+#### ScriptableObject Event System Examples
+
+In this example we have a Hoop class that will invoke a GameEvent when an object collides with a trigger.
+
+```cs
+public class Hoop : MonoBehaviour
+{
+    [SerializeField] private GameEvent gameEvent;
+
+    private void OnTriggerEnter(Collider col)
+    {
+        gameEvent?.Invoke();
+    }
+}
+```
+
+GameEvent can be assigned to the class in the inspector.
+
+Image one
+
+
