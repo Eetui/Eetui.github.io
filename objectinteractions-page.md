@@ -136,7 +136,7 @@ Player needs some kind of indication that the object the is looking is interacta
 
 The IInteractable interface has GetInteractionText method that returns a string. This is used with the UIInteract class. When player presses the interaction key an event is invoked. ```onInteractionChanged?.Invoke();```
 
-```onInteractionChanged?.Invoke();``` Event will call UIInteraction's ```UpdateInteractionUI()``` method, which will update the text ```interactionText.text = player.interactable.GetInteractionText();```. 
+```onInteractionChanged?.Invoke();``` Event will call UIInteraction's ```UpdateInteractionUI()``` method, which will update the text ```interactionText.text = player.interactable.GetInteractionText();```. ```UpdateInteractionUI()``` method will also enable or disable the UI depending if the player.interactable is null or not.
 
 We will go through the event system later.
 
