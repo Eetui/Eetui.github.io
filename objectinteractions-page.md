@@ -218,7 +218,7 @@ public class GameEventListener : MonoBehaviour
 }
 ```
 
-#### ScriptableObject Event System Examples
+### ScriptableObject Event System Examples
 
 In this simple example we have a Hoop class that will invoke a GameEvent when an object collides with a trigger.
 
@@ -245,3 +245,14 @@ Then we have a door prefab that has a GameEventListener attached to it. As you c
 ![Hoop](https://j.gifs.com/6W8XZO.gif)
 
 And BOOM door is open!
+
+### Elements
+
+Will be updated later
+
+### TNT?
+
+Will be updated later
+
+
+
