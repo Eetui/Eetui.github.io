@@ -8,8 +8,8 @@ I did this project for Advanced Game Programming -course.
 
 [Link to Object Interactions GitHub](https://github.com/Eetui/ObjectInteractions)
 
-
 ## Goals of the course
+
 My goal was to write modular and cleaner code.
 
 ## What did I learn?
@@ -18,12 +18,12 @@ I fulfilled my goal and managed to write modular and cleaner code. I learned SOL
 
 ## Code and Gameplay
 
-
 ### Player Controls
 
 First thing I implemented was the player controls. It was done with Unitys old input system and CharacterController.
 
 #### PlayerMovement.cs
+
 ```cs
 private void Update()
 {
@@ -40,6 +40,7 @@ private void Update()
     characterController.Move(movement * Time.deltaTime);
 }
 ```
+
 #### PlayerLook.cs
 
 ```cs
@@ -69,6 +70,7 @@ private void CalculateCameraPitch(float mouseInputY)
 All interactable objects inherit IInteractable interface. IInteractable methdos are called from PlayerInteract class, which is attached to the player.
 
 #### IInteractable.cs
+
 ```cs
 public interface IInteractable
 {
@@ -80,6 +82,7 @@ public interface IInteractable
 Example class that inherits IInteractable
 
 #### InteractableDoor.cs
+
 ```cs
 public class InteractableDoor : Door, IInteractable
 {
@@ -88,11 +91,13 @@ public class InteractableDoor : Door, IInteractable
     public void Interact() => UseDoor();
 }
 ```
+
 ![Interactions](https://j.gifs.com/K8X6oY.gif)
 
 All this is possible because of the PlayerInteract class that I mentioned earlier.
 
 #### PlayerInteract.cs
+
 ```cs
 
 public IInteractable interactable = null; // interactable variable
@@ -120,15 +125,15 @@ private void Update()
 ... // code goes on
 
 ```
+
 PlayerInteract is shooting a ray and if the ray hits some object, it will look if the object inherits IInteractable. If the object inherits from IInteractable it will store the information to variable called interactable. Then if player presses the interaction key, it will call the objects IInteractable interact method.
 
 For example if the player looks at the InteractableDoor, the PlayerInteract script will look if the InteractableDoor has inherited the IInteraction interface and since it has, the PlayerInteract script will continue and wait for the player input. Then the player presses the interaction key and the PlayerInteract script will call the InteractableDoor's Interact method, which will call the UseDoor method and the door opens.
 
 ### Interactable UI
 
-
-
 #### UIInteract.cs
+
 ```cs
 public class UIInteract : MonoBehaviour
 {
@@ -154,5 +159,6 @@ public class UIInteract : MonoBehaviour
         {
             interactPanel.SetActive(false);
         }
+    }
 }
 ```
