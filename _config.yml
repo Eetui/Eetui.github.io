@@ -2,7 +2,3 @@ theme: jekyll-theme-cayman
 
 title: Eetu Ihalainen
 description: Portfolio
-
-kramdown:
-  syntax_highlighter_opts:
-    disable : true
