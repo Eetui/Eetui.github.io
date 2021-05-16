@@ -128,9 +128,17 @@ private void Update()
 
 PlayerInteract is shooting a ray and if the ray hits some object, it will look if the object inherits IInteractable. If the object inherits from IInteractable it will store the information to variable called interactable. Then if player presses the interaction key, it will call the objects IInteractable interact method.
 
-For example if the player looks at the InteractableDoor, the PlayerInteract script will look if the InteractableDoor has inherited the IInteraction interface and since it has, the PlayerInteract script will continue and wait for the player input. Then the player presses the interaction key and the PlayerInteract script will call the InteractableDoor's Interact method, which will call the UseDoor method and the door opens.
+For example if the player looks at the InteractableDoor, the PlayerInteract script will look ```if (hitTransform.TryGetComponent(out interactable)``` if the InteractableDoor has inherited the IInteraction interface and since it has, the PlayerInteract script will continue and wait for the player input  ```if (Input.GetKeyDown(interactionKey))```. Then the player presses the interaction key and the PlayerInteract script will call the InteractableDoor's Interact method ```interactable.Interact();```, which will call the UseDoor method ```public void Interact() => UseDoor();``` and the door opens.
 
 ### Interactable UI
+
+Player needs some kind of indication that the object the is looking is interactable. In this project that is done with the UI. You might be able to see this in the gif above.
+
+The IInteractable interface has GetInteractionText method that returns a string. This is used with the UIInteract class. When player presses the interaction key an event is invoked. ```onInteractionChanged?.Invoke();```
+
+```onInteractionChanged?.Invoke();``` Event will call UIInteractions ```UpdateInteractionUI()``` method, which will update the text ```interactionText.text = player.interactable.GetInteractionText();```. 
+
+We will go through the event system later.
 
 #### UIInteract.cs
 
