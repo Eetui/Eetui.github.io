@@ -234,8 +234,10 @@ public class Hoop : MonoBehaviour
 }
 ```
 
-GameEvent can be assigned to the class in the inspector.
+![Hoop class in the inspector](./images/ObjectInteractions/HoopInspector.png)
 
-Image one
+GameEvent can be assigned to the Hoop class in the inspector. In this case GameEvent is "On Score Hoop"
 
+![Hoop class in the inspector](./images/ObjectInteractions/GameEventListenerExample.png)
 
+Then we have a door prefab that has a GameEventListener attached to it. As you can see we invoke the UnityEvent which will call the Door's ```UseDoor()``` method when the "On Score Hoop" GameEvent gets invoked.
