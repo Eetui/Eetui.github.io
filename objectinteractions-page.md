@@ -63,3 +63,96 @@ private void CalculateCameraPitch(float mouseInputY)
     playerCamera.localEulerAngles = Vector3.right * cameraPitch;
 }
 ```
+
+### Interactables
+
+All interactable objects inherit IInteractable interface. IInteractable methdos are called from PlayerInteract class, which is attached to the player.
+
+#### IInteractable.cs
+```cs
+public interface IInteractable
+{
+        string GetInteractionText();
+        void Interact();
+}
+```
+
+Example class that inherits IInteractable
+
+#### InteractableDoor.cs
+```cs
+public class InteractableDoor : Door, IInteractable
+{
+    public string GetInteractionText() => isDoorOpen ? "Open Door" : "Close Door";
+
+    public void Interact() => UseDoor();
+}
+```
+![Interactions](https://j.gifs.com/K8X6oY.gif)
+
+All this is possible because of the PlayerInteract class that I mentioned earlier.
+
+#### PlayerInteract.cs
+```cs
+
+public IInteractable interactable = null; // interactable variable
+
+... // skipping some code
+
+private void Update()
+{
+    interactable = null;
+
+    Physics.Raycast(camTransform.position, camTransform.TransformDirection(Vector3.forward), out var hit, interactRange, interactableLayerMask);
+    var hitTransform = hit.transform;
+
+    if (hitTransform != null)
+    {
+        if (hitTransform.TryGetComponent(out interactable) && groundCheck.IsGrounded())
+        {
+            if (Input.GetKeyDown(interactionKey))
+            {
+                interactable.Interact();
+                onInteractionChanged?.Invoke();
+            }
+        }
+    }
+... // code goes on
+
+```
+PlayerInteract is shooting a ray and if the ray hits some object, it will look if the object inherits IInteractable. If the object inherits from IInteractable it will store the information to variable called interactable. Then if player presses the interaction key, it will call the objects IInteractable interact method.
+
+For example if the player looks at the InteractableDoor, the PlayerInteract script will look if the InteractableDoor has inherited the IInteraction interface and since it has, the PlayerInteract script will continue and wait for the player input. Then the player presses the interaction key and the PlayerInteract script will call the InteractableDoor's Interact method, which will call the UseDoor method and the door opens.
+
+### Interactable UI
+
+
+
+#### UIInteract.cs
+```cs
+public class UIInteract : MonoBehaviour
+{
+    [SerializeField] private PlayerInteract player;
+
+    [Header("Interaction")]
+    [SerializeField] private GameObject interactPanel;
+    [SerializeField] private Text interactKeyText;
+    [SerializeField] private Text interactionText;
+    private string interactionKey;
+
+    private void Start() => interactionKey = player.InteractionKey.ToString();
+
+    public void UpdateInteractionUI()
+    {
+        if (player.interactable != null)
+        {
+            interactionText.text = player.interactable.GetInteractionText();
+            interactKeyText.text = interactionKey;
+            interactPanel.SetActive(true);
+        }
+        else
+        {
+            interactPanel.SetActive(false);
+        }
+}
+```
