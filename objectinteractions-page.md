@@ -130,7 +130,7 @@ PlayerInteract is shooting a ray and if the ray hits some object, it will look i
 
 For example if the player looks at the InteractableDoor, the PlayerInteract script will look ```if (hitTransform.TryGetComponent(out interactable)``` if the InteractableDoor has inherited the IInteraction interface and since it has, the PlayerInteract script will continue and wait for the player input  ```if (Input.GetKeyDown(interactionKey))```. Then the player presses the interaction key and the PlayerInteract script will call the InteractableDoor's Interact method ```interactable.Interact();```, which will call the UseDoor method ```public void Interact() => UseDoor();``` and the door opens.
 
-### Interactable UI
+### UI
 
 Player needs some kind of indication that the object the is looking is interactable. In this project that is done with the UI. You might be able to see this in the gif above.
 
@@ -168,5 +168,48 @@ public class UIInteract : MonoBehaviour
             interactPanel.SetActive(false);
         }
     }
+}
+```
+
+### ScriptableObject Event system
+
+This system has two parts GameEvent.cs and GameEventListener.cs. GameEvent will be a ScriptableObject.
+
+#### GameEvent.cs
+
+```cs
+[CreateAssetMenu(menuName = "Eetu/Game Event", fileName = "New Game Event")]
+public class GameEvent : ScriptableObject
+{
+    List<GameEventListener> listeners = new List<GameEventListener>();
+
+    public void Invoke()
+    {
+        foreach (var listener in listeners)
+        {
+            listener.TriggerEvent();
+            //Debug.Log($"{name} Event has been invoked", this);
+        }
+    }
+
+    public void AddListener(GameEventListener gameEventListener) => listeners.Add(gameEventListener);
+
+    public void RemoveListener(GameEventListener gameEventListener) => listeners.Remove(gameEventListener);
+}
+```
+
+#### GameEventListener.cs
+
+```cs
+public class GameEventListener : MonoBehaviour
+{
+    [SerializeField] private GameEvent gameEvent;
+    [SerializeField] private UnityEvent unityEvent;
+
+    private void Awake() => gameEvent.AddListener(this);
+
+    private void OnDestroy() => gameEvent.RemoveListener(this);
+
+    public void TriggerEvent() => unityEvent?.Invoke();
 }
 ```
