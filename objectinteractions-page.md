@@ -227,10 +227,7 @@ public class Hoop : MonoBehaviour
 {
     [SerializeField] private GameEvent gameEvent;
 
-    private void OnTriggerEnter(Collider col)
-    {
-        gameEvent?.Invoke();
-    }
+    private void OnTriggerEnter(Collider col) => gameEvent?.Invoke();
 }
 ```
 
