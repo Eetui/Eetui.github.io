@@ -16,7 +16,7 @@ My goal was to write modular and cleaner code.
 
 I fulfilled my goal and managed to write modular and cleaner code. I learned SOLID-principles on some level and how to implement them into my code. I also learned how to implement events with Scriptable Objects and how to use Scriptable Objects overall. In addition I used interfaces on this project and became more familiar with them. And thousand little things what comes when making a project.
 
-## Code and Gameplay
+## Code
 
 ### Player Controls
 
