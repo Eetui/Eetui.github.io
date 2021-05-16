@@ -2,3 +2,6 @@ theme: jekyll-theme-midnight
 
 title: Eetu Ihalainen
 description: Portfolio
+
+github:
+  is_project_page: false
