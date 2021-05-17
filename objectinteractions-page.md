@@ -50,7 +50,6 @@ private void Update()
     
     CalculateCameraPitch(mouseInput.y);
 
-    //yaw
     transform.Rotate(Vector3.up * mouseInput.x * sensitivity);
 }
 
@@ -67,7 +66,7 @@ private void CalculateCameraPitch(float mouseInputY)
 
 ### Interactables
 
-All interactable objects inherit IInteractable interface. IInteractable methdos are called from PlayerInteract class, which is attached to the player.
+All interactable objects inherit IInteractable interface. IInteractable methods are called from PlayerInteract class, which is attached to the player.
 
 #### IInteractable.cs
 
