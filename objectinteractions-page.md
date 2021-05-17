@@ -222,6 +222,7 @@ public class GameEventListener : MonoBehaviour
 
 In this simple example we have a Hoop class that will invoke a GameEvent when an object collides with a trigger.
 
+#### Hoop.cs
 ```cs
 public class Hoop : MonoBehaviour
 {
@@ -245,7 +246,11 @@ And BOOM door is open!
 
 ### Elements
 
+This system is based on ScriptableObejects. ElementalObject.cs has a public list that will contain every element that it is going to interact with and it is going to be a ScriptableObject.
 
+ElementBehaviour.cs has a reference to the ElementalObject and it also has an UnityEvent. The UnityEvent will trigger when an object collides with it and the object has ElementalBehaviour attached to it. Also the object has be included in the ElementalObject's list.
+
+#### ElementalObject.cs
 
 ```cs
 [CreateAssetMenu(menuName = "Eetu/ElementalObject", fileName = "ElementalObject")]
@@ -254,6 +259,8 @@ public class ElementalObject : ScriptableObject
     public List<ElementalObject> ElementsToInteractWith = new List<ElementalObject>();
 }
 ```
+
+#### ElementBehaviour.cs
 
 ```cs
 public class ElementBehaviour : MonoBehaviour
@@ -281,7 +288,7 @@ public class ElementBehaviour : MonoBehaviour
 
 #### Elements Example TNT and Fireball
 
-Will be updated later
+
 
 ### Pickable Objects?
 
