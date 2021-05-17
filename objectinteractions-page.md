@@ -130,7 +130,7 @@ PlayerInteract is shooting a ray and if the ray hits some object, it will look i
 
 For example if the player looks at the InteractableDoor, the PlayerInteract script will look ```if (hitTransform.TryGetComponent(out interactable)``` if the InteractableDoor has inherited the IInteraction interface and since it has, the PlayerInteract script will continue and wait for the player input  ```if (Input.GetKeyDown(interactionKey))```. Then the player presses the interaction key and the PlayerInteract script will call the InteractableDoor's Interact method ```interactable.Interact();```, which will call the UseDoor method ```public void Interact() => UseDoor();``` and the door opens.
 
-### UI
+### Interactable's UI
 
 Player needs some kind of indication that the object the is looking is interactable. In this project that is done with the UI. You might be able to see this in the gif above.
 
@@ -172,8 +172,51 @@ public class UIInteract : MonoBehaviour
 ```
 ### Pickable Objects
 
-All pickable objects inherit the IInteractable interface. Also they inherit IThrowable interface which almost identical with IInteractable so I won't be going over it here. In the ```Start()``` method every pickable object will try to find PickUpPoint ```pickUpPoint = GameObject.Find("PickUpPoint").gameObject;```. PickUpPoint is an empty gameobject  which is a player's childobject.
+All pickable objects inherit the IInteractable interface. Also they inherit IThrowable interface which almost identical with IInteractable so I won't be going over it here. In the ```Start()``` method every pickable object will try to find PickUpPoint ```pickUpPoint = GameObject.Find("PickUpPoint").gameObject;```. PickUpPoint is an empty gameobject  which is a player's childobject. 
 
+When the pickable object is picked up, the pickable object is being interpolated from the object's position to the PickUpPoint's position.
+```cs
+private void MoveObject()
+{
+    if (distance > minDistance)
+    {
+        speed = Mathf.SmoothStep(minSpeed, maxSpeed, distance / maxDistance);
+        speed *= Time.fixedDeltaTime;
+        Vector3 direction = target - rb.position;
+        rb.velocity = direction.normalized * speed;
+    }
+    else rb.velocity = Vector3.zero;
+}
+```
+![PickUpPoint](./images/ObjectInteractions/PickUpPoint.png)
+
+When player looks at the interactable object (in this case it is one of the Pickable Objects) and presses the interaction key, the player will pick up an object. If the object is picked up, the player will drop the object.
+
+```cs
+public void Interact()
+{
+    if (IsPickedUp) Drop();
+    else PickUp();
+}
+```
+![Picking and dropping](https://j.gifs.com/798ABy.gif)
+
+```cs
+private void PickUp()
+{
+    distance = 0;
+    IsPickedUp = true;
+    rb.useGravity = false;
+    rb.freezeRotation = true;
+}
+
+private void Drop()
+{
+    IsPickedUp = false;
+    rb.useGravity = true;
+    rb.freezeRotation = false;
+}
+```
 
 
 ### ScriptableObject Event System
@@ -241,7 +284,7 @@ public class Hoop : MonoBehaviour
 
 GameEvent can be assigned to the Hoop class in the inspector. In this case GameEvent is "On Score Hoop"
 
-![Hoop class in the inspector](./images/ObjectInteractions/GameEventListenerExample.png)
+![GameEventListener](./images/ObjectInteractions/GameEventListenerExample.png)
 
 Then we have a door prefab that has a GameEventListener attached to it. As you can see we invoke the UnityEvent which will call the Door's ```UseDoor()``` method when the "On Score Hoop" GameEvent gets invoked.
 
