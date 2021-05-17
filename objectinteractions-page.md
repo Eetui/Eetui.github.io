@@ -6,7 +6,7 @@ Is a project where the player is controlled from a first-person perspective and 
 
 I did this project for Advanced Game Programming -course.
 
-[Link to Object Interactions GitHub](https://github.com/Eetui/ObjectInteractions) (Will be updated soon)
+* [Link to Object Interactions GitHub](https://github.com/Eetui/ObjectInteractions)
 
 ## Goals of the course
 
