@@ -245,7 +245,39 @@ And BOOM door is open!
 
 ### Elements
 
-Will be updated later
+
+
+```cs
+[CreateAssetMenu(menuName = "Eetu/ElementalObject", fileName = "ElementalObject")]
+public class ElementalObject : ScriptableObject
+{
+    public List<ElementalObject> ElementsToInteractWith = new List<ElementalObject>();
+}
+```
+
+```cs
+public class ElementBehaviour : MonoBehaviour
+{
+    public ElementalObject elementalObject;
+    public UnityEvent OnElementCollision;
+
+    public void SetElement(ElementalObject _elementalObject)
+    {
+        elementalObject = _elementalObject;
+    }
+
+    public virtual void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.TryGetComponent(out ElementBehaviour colElement))
+        {
+            if (elementalObject.ElementsToInteractWith.Contains(colElement.elementalObject))
+            {
+                OnElementCollision?.Invoke();
+            }
+        }
+    }
+}
+```
 
 #### Elements Example TNT and Fireball
 
