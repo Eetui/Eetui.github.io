@@ -170,6 +170,9 @@ public class UIInteract : MonoBehaviour
     }
 }
 ```
+
+![UI](./images/ObjectInteractions/InteractablesUI.png)
+
 ### Pickable Objects
 
 All pickable objects inherit the IInteractable interface. Also they inherit IThrowable interface which almost identical with IInteractable so I won't be going over it here. In the ```Start()``` method every pickable object will try to find PickUpPoint ```pickUpPoint = GameObject.Find("PickUpPoint").gameObject;```. PickUpPoint is an empty gameobject  which is a player's childobject. 
