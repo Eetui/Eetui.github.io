@@ -6,7 +6,7 @@ Is a project where the player is controlled from a first-person perspective and 
 
 I did this project for Advanced Game Programming -course.
 
-[Link to Object Interactions GitHub](https://github.com/Eetui/ObjectInteractions)
+[Link to Object Interactions GitHub](https://github.com/Eetui/ObjectInteractions) (Will be updated soon)
 
 ## Goals of the course
 
@@ -288,7 +288,16 @@ public class ElementBehaviour : MonoBehaviour
 
 #### Elements Example TNT and Fireball
 
+![TNT Element](./images/ObjectInteractions/TNTInspector.png)
 
+Here we have TNT element with Fire element included in it.
+
+![TNT ObjectBehaviour](./images/ObjectInteractions/ElementObjectInspector.png)
+
+TNT's OnElementCollision event will trigger when an object with Fire element attached to it collides with the TNT (Fire element doesn't have to have TNT included in it). The UnityEvent will call for the TNT's Explosion method and an explosion happens.
+
+
+![TNT Explosion](https://j.gifs.com/DqkqxK.gif)
 
 ### Pickable Objects?
 
