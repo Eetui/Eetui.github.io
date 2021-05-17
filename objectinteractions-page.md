@@ -170,6 +170,11 @@ public class UIInteract : MonoBehaviour
     }
 }
 ```
+### Pickable Objects
+
+All pickable objects inherit the IInteractable interface. Also they inherit IThrowable interface which almost identical with IInteractable so I won't be going over it here. In the ```Start()``` method every pickable object will try to find PickUpPoint ```pickUpPoint = GameObject.Find("PickUpPoint").gameObject;```. PickUpPoint is an empty gameobject  which is a player's childobject.
+
+
 
 ### ScriptableObject Event System
 
@@ -298,7 +303,3 @@ TNT's OnElementCollision event will trigger when an object with Fire element att
 
 
 ![TNT Explosion](https://j.gifs.com/DqkqxK.gif)
-
-### Pickable Objects?
-
-Will be updated later
