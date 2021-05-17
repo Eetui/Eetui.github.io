@@ -348,3 +348,7 @@ TNT's OnElementCollision event will trigger when an object with Fire element att
 
 
 ![TNT Explosion](https://j.gifs.com/DqkqxK.gif)
+
+![Water and Fire](https://j.gifs.com/jYQnjl.gif)
+
+Water and Fire (naturally water extinguishes the fire)
