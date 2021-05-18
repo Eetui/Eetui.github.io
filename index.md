@@ -3,7 +3,7 @@
 
 My name is Eetu Ihalainen and I am a 23-year-old game programmer student from Tampere. My strengths are with Unity and C# programming. I also know the basics of Unreal Engine 4 and C++.
 
-Other skills: Version Control (Git), html, css
+Other skills: Version Control (Git), html, css, blender
 
 Languages: Finnish, English and basics of Swedish.
 
