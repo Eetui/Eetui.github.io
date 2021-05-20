@@ -10,7 +10,7 @@ In this project I was the main programmer. The game was made with a team of five
 
 ## What did I learn?
 
-I learned how to implement a object pooling system. The object pooling system was used to pool the bubbles. I also got a bit more familiar with the profiler tool since I was constantly trying to improve the performance. 
+I learned how to implement an object pooling system. The object pooling system was used to pool the bubbles. I also got a bit more familiar with the profiler tool since I was constantly trying to improve the performance. 
 
 In addition I implemented a saving system that saves the state of the player profile and that was a good learning experience because now I know that I will not be doing it the same way (It was overly complicated). 
 
