@@ -3,7 +3,7 @@
 
 My name is Eetu Ihalainen and I am a 23-year-old game programmer student from Tampere. My strengths are with Unity and C# programming. I also know the basics of Unreal Engine 4 and C++.
 
-Other skills: Version Control (Git), html, css, blender
+Other skills: Git, Blender, HTML, CSS, Svelte (basics)
 
 Languages: Finnish, English and basics of Swedish.
 
@@ -20,6 +20,7 @@ Links below leads you to their corresponding pages.
 *   [Object Interactions](./objectinteractions-page.html)
 *   [My Own Bubble Time](./MyOwnBubbleTime.html) (Published on the Google Play Store)
 *   [Conway's game of life](https://github.com/Eetui/GameOfLife) (Repo link)
+*   [Maze generator with pathfinding](https://github.com/Eetui/MazeWithPathfinding) (Repo link)
 
 I have also been a part of a few game jams.
 
