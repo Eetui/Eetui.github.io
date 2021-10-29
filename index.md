@@ -23,9 +23,6 @@ Links below leads you to their corresponding pages.
 *   [My Own Bubble Time](./MyOwnBubbleTime.html) (Published on the Google Play Store)
 *   [Conway's game of life](https://github.com/Eetui/GameOfLife) (Repo link)
 *   [Maze generator with pathfinding](https://github.com/Eetui/MazeWithPathfinding) (Repo link)
-
-I have also been a part of a few game jams.
-
-* [GGJ2021 - The Lost Passangers](https://globalgamejam.org/2021/games/lost-passengers-5)
+*   [GGJ2021 - The Lost Passangers](https://globalgamejam.org/2021/games/lost-passengers-5)
 
 Last update 29.10.21
