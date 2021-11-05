@@ -25,4 +25,11 @@ Links below leads you to their corresponding pages.
 *   [Maze generator with pathfinding](https://github.com/Eetui/MazeWithPathfinding) (Repo link)
 *   [GGJ2021 - The Lost Passangers](https://globalgamejam.org/2021/games/lost-passengers-5)
 
-Last update 29.10.21
+Last update 5.11.21
+
+![Bubbles](https://j.gifs.com/BrB6zx.gif)
+
+![Defender](https://j.gifs.com/jYvEGR.gif)
+
+![TNT Explosion](https://j.gifs.com/DqkqxK.gif)
+
