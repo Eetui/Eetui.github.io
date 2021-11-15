@@ -15,8 +15,6 @@ Find me on:
 
 ## Projects:
 
-Links below leads you to their corresponding pages.
-
 *   [Defender](https://github.com/Eetui/Defender2) (Repo link)
 *   [Object Interactions](./objectinteractions-page.html)
 *   [My Own Bubble Time](./MyOwnBubbleTime.html) (Published on the Google Play Store)
@@ -24,7 +22,7 @@ Links below leads you to their corresponding pages.
 *   [Maze generator with pathfinding](https://github.com/Eetui/MazeWithPathfinding) (Repo link)
 *   [GGJ2021 - The Lost Passangers](https://globalgamejam.org/2021/games/lost-passengers-5)
 
-Last update 5.11.21
+Last update 15.11.21
 
 ![Bubbles](https://j.gifs.com/BrB6zx.gif)
 
