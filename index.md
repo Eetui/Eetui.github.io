@@ -15,10 +15,9 @@ Find me on:
 
 ## Projects:
 
-Currently working on a project called Defender and I will soon publish the projext repo here.
-
 Links below leads you to their corresponding pages.
 
+*   [Defender](https://github.com/Eetui/Defender2) (Repo link)
 *   [Object Interactions](./objectinteractions-page.html)
 *   [My Own Bubble Time](./MyOwnBubbleTime.html) (Published on the Google Play Store)
 *   [Conway's game of life](https://github.com/Eetui/GameOfLife) (Repo link)
