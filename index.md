@@ -2,7 +2,7 @@
 
 Last update 31.05.23
 
-![Eetu](./images/Eetu.png)
+![Eetu](./images/selfie.png)
 
 I am a 26-year-old junior game developer based in Tampere. I have a 
 Bachelor's Degree in Business Information Technology from JAMK (December 2022), and I have been 
