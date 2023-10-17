@@ -9,7 +9,7 @@ I am a game developer with a Bachelor’s Degree in Business Information Technol
 * Expertice 
   * C#, Unity, Git, GitHub, Bitbucket, Jira, Trello
 * Currently learning
-  * ASP.NET.Core, React and web development as a whole
+  * ASP.NET Core, React and web development as a whole
 * Other skills 
   * HTML, CSS, JavaScript, Unreal Engine 4, C++, Blender
 * Languages
