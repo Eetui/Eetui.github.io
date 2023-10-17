@@ -45,7 +45,6 @@ At Zaibatsu I've been part of multiple projects
 
 *   [Defender](https://github.com/Eetui/Defender2) (Repo link)
 *   [Object Interactions](./objectinteractions-page.html)
-*   [My Own Bubble Time](./MyOwnBubbleTime.html) (Published on the Google Play Store)
 *   [Conway's game of life](https://github.com/Eetui/GameOfLife) (Repo link)
 *   [Maze generator with pathfinding](https://github.com/Eetui/MazeWithPathfinding) (Repo link)
 *   [GGJ2021 - The Lost Passangers](https://globalgamejam.org/2021/games/lost-passengers-5)
