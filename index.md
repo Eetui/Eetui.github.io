@@ -36,15 +36,15 @@ At Zaibatsu I've been part of multiple projects
 * I was also part of smaller projects, for example I made training simulator that was embedded in LMS (Moodle).
   * My [Thesis](https://www.theseus.fi/bitstream/handle/10024/786952/Thesis_Ihalainen_Eetu.pdf?sequence=2&isAllowed=y) goes in depth about this subject.
 
-## Older Projects:
-
+## Other/Older Projects:
+*   [GGJ22 - Spirit tower](https://v3.globalgamejam.org/2022/games/ghost-wizard-game-9) 
 *   [Object Interactions](./objectinteractions-page.html) <---- Good explanations with examples, check this!
 *   [Defender](https://github.com/Eetui/Defender2) (Repo link)
 *   [Conway's game of life](https://github.com/Eetui/GameOfLife) (Repo link)
 *   [Maze generator with pathfinding](https://github.com/Eetui/MazeWithPathfinding) (Repo link)
 *   [GGJ2021 - The Lost Passangers](https://globalgamejam.org/2021/games/lost-passengers-5)
 
-[![GGJ22](./images/GGJ22.jpg)](https://youtu.be/fSnmNwBWvjc)
+[![GGJ22 - Spirit Tower](./images/GGJ22.jpg)](https://youtu.be/fSnmNwBWvjc)
 [![ObjectInteraction](./images/Object-interactions.jpg)](https://youtu.be/tiQXpz0zB4E)
 [![Defender](./images/Defender.jpg)](https://youtu.be/AFzmvQKEn3g)
 [![GameOfLife](./images/GameOfLife.jpg)](https://youtu.be/ToPjVKH6QNQ)
