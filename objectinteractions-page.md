@@ -345,10 +345,3 @@ Here we have TNT element with Fire element included in it.
 ![TNT ObjectBehaviour](./images/ObjectInteractions/ElementObjectInspector.png)
 
 TNT's OnElementCollision event will trigger when an object with Fire element attached to it collides with the TNT (Fire element doesn't have to have TNT included in it). The UnityEvent will call for the TNT's Explosion method and an explosion happens.
-
-
-![TNT Explosion](https://j.gifs.com/DqkqxK.gif)
-
-![Water and Fire](https://j.gifs.com/jYQnjl.gif)
-
-Water and Fire (naturally water extinguishes the fire)
