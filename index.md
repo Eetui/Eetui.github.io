@@ -4,12 +4,7 @@ Last update 17.10.23
 
 ![Eetu](./images/selfieSmall.jpg)
 
-I am a game developer and I have a 
-Bachelor's Degree in Business Information Technology from JAMK (December 2022), and I have been 
-working for Zaibatsu Interactive Oy since January 2022. I have a strong 
-background in Unity and C# programming. Eager to expand my knowledge and stay up-to-date with the latest 
-industry trends, I am always open to learning new technologies and 
-techniques.
+I am a game developer with a Bachelor’s Degree in Business Information Technology from JAMK, which I obtained in December 2022. Since January 2022, I have been employed at Zaibatsu Interactive Oy. My professional expertise lies in Unity and C# programming, and I am highly motivated to continually enhance my skills and remain informed about the most recent developments in the industry. I am committed to learning new technologies and techniques to further advance my career.
 
 
 * Expertice 
@@ -43,8 +38,8 @@ At Zaibatsu I've been part of multiple projects
 
 ## Older Projects:
 
+*   [Object Interactions](./objectinteractions-page.html) <---- Good explanations with examples, check this!
 *   [Defender](https://github.com/Eetui/Defender2) (Repo link)
-*   [Object Interactions](./objectinteractions-page.html)
 *   [Conway's game of life](https://github.com/Eetui/GameOfLife) (Repo link)
 *   [Maze generator with pathfinding](https://github.com/Eetui/MazeWithPathfinding) (Repo link)
 *   [GGJ2021 - The Lost Passangers](https://globalgamejam.org/2021/games/lost-passengers-5)
