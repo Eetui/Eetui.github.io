@@ -4,15 +4,15 @@ Last update 17.10.23
 
 ![Eetu](./images/selfieSmall.jpg)
 
-I am a game developer with a Bachelor’s Degree in Business Information Technology from JAMK, which I obtained in December 2022. Since January 2022, I have been employed at Zaibatsu Interactive Oy. My professional expertise lies in Unity and C# programming, and I am highly motivated to continually enhance my skills and remain informed about the most recent developments in the industry. I am committed to learning new technologies and techniques to further advance my career.
+I am a game developer with a Bachelor’s Degree in Business Information Technology from JAMK, where I graduated in December 2022. Since January 2022, I have been employed at Zaibatsu Interactive Oy. My professional expertise lies in Unity and C# programming, and I am highly motivated to continually enhance my skills and remain informed about the most recent developments in the industry. I am committed to learning new technologies and techniques to further advance my career.
 
 
 * Expertice 
   * C#, Unity, Git, GitHub, Bitbucket, Jira, Trello
 * Currently learning
-  * ASP.NET.Core, React and web dev as a whole.
+  * ASP.NET.Core, React and web development as a whole
 * Other skills 
-  * Unreal Engine 4, C++, Blender, HTML, CSS, JavaScript,
+  * HTML, CSS, JavaScript, Unreal Engine 4, C++, Blender
 
 Languages: Finnish (Native), Working proficiency in English.
 
@@ -43,4 +43,10 @@ At Zaibatsu I've been part of multiple projects
 *   [Conway's game of life](https://github.com/Eetui/GameOfLife) (Repo link)
 *   [Maze generator with pathfinding](https://github.com/Eetui/MazeWithPathfinding) (Repo link)
 *   [GGJ2021 - The Lost Passangers](https://globalgamejam.org/2021/games/lost-passengers-5)
+
+[![GGJ22](./images/GGJ22.jpg)](https://youtu.be/fSnmNwBWvjc)
+[![ObjectInteraction](./images/Object-interactions.jpg)](https://youtu.be/tiQXpz0zB4E)
+[![Defender](./images/Defender.jpg)](https://youtu.be/AFzmvQKEn3g)
+[![GameOfLife](./images/GameOfLife.jpg)](https://youtu.be/ToPjVKH6QNQ)
+[![Pathfinding](./images/Maze-pathfinding.jpg)](https://youtu.be/bkdYx1pGlPQ)
 
