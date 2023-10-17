@@ -44,6 +44,8 @@ At Zaibatsu I've been part of multiple projects
 *   [Maze generator with pathfinding](https://github.com/Eetui/MazeWithPathfinding) (Repo link)
 *   [GGJ2021 - The Lost Passangers](https://globalgamejam.org/2021/games/lost-passengers-5)
 
+## Videos of the projects
+
 [![GGJ22 - Spirit Tower](./images/GGJ22.jpg)](https://youtu.be/fSnmNwBWvjc)
 [![ObjectInteraction](./images/Object-interactions.jpg)](https://youtu.be/tiQXpz0zB4E)
 [![Defender](./images/Defender.jpg)](https://youtu.be/AFzmvQKEn3g)
