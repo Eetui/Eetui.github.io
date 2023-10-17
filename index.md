@@ -1,10 +1,10 @@
 # Eetu Ihalainen - About me
 
-Last update 31.05.23
+Last update 17.10.23
 
 ![Eetu](./images/selfieSmall.jpg)
 
-I am a 26-year-old junior game developer based in Tampere. I have a 
+I am a game developer and I have a 
 Bachelor's Degree in Business Information Technology from JAMK (December 2022), and I have been 
 working for Zaibatsu Interactive Oy since January 2022. I have a strong 
 background in Unity and C# programming. Eager to expand my knowledge and stay up-to-date with the latest 
@@ -14,12 +14,14 @@ techniques.
 
 * Expertice 
   * C#, Unity, Git, GitHub, Bitbucket, Jira, Trello
+* Currently learning
+  * ASP.NET.Core, React and web dev as a whole.
 * Other skills 
   * Unreal Engine 4, C++, Blender, HTML, CSS, JavaScript,
 
 Languages: Finnish (Native), Working proficiency in English.
 
-Also I love to play competitive games like Chess, CSGO, Valorant and League of Legends.
+Also I love to play competitive games like Chess, CS2 , Valorant and League of Legends.
 
 ### Social
 
@@ -47,11 +49,4 @@ At Zaibatsu I've been part of multiple projects
 *   [Conway's game of life](https://github.com/Eetui/GameOfLife) (Repo link)
 *   [Maze generator with pathfinding](https://github.com/Eetui/MazeWithPathfinding) (Repo link)
 *   [GGJ2021 - The Lost Passangers](https://globalgamejam.org/2021/games/lost-passengers-5)
-
-
-![Bubbles](https://j.gifs.com/BrB6zx.gif)
-
-![Defender](https://j.gifs.com/jYvEGR.gif)
-
-![TNT Explosion](https://j.gifs.com/DqkqxK.gif)
 
