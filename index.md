@@ -6,17 +6,14 @@ Last update 17.10.23
 
 I am a game developer with a Bachelor’s Degree in Business Information Technology from JAMK, where I graduated in December 2022. Since January 2022, I have been employed at Zaibatsu Interactive Oy. My professional expertise lies in Unity and C# programming, and I am highly motivated to continually enhance my skills and remain informed about the most recent developments in the industry. I am committed to learning new technologies and techniques to further advance my career.
 
-
 * Expertice 
   * C#, Unity, Git, GitHub, Bitbucket, Jira, Trello
 * Currently learning
   * ASP.NET.Core, React and web development as a whole
 * Other skills 
   * HTML, CSS, JavaScript, Unreal Engine 4, C++, Blender
-
-Languages: Finnish (Native), Working proficiency in English.
-
-Also I love to play competitive games like Chess, CS2 , Valorant and League of Legends.
+* Languages
+  * Finnish (Native), Working proficiency in English.
 
 ### Social
 
@@ -25,7 +22,7 @@ Also I love to play competitive games like Chess, CS2 , Valorant and League of L
 
 ## Projects 
 
-At Zaibatsu I've been part of multiple projects
+I've been part of multiple projects
 
 * [Super Spatial](https://www.superspatial.com/)
   * Super Spatial was a large-scale development project aimed at creating an immersive social MMO game for mobile platforms. As a client-side developer, I collaborated with a multidisciplinary team, including designers and backend developers. My responsibilities included fixing bugs and implementing new features to the game.
